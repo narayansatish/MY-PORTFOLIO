@@ -19,7 +19,7 @@ exports.illustration = illustration;
 var greeting = {
   username: "Satish Narayan",
   title: "Hi all, I'm Satish",
-  subTitle: (0, _reactEasyEmoji["default"])("A passionate Front-End Software Developer 🚀 having an experience of designing and building Web  applications with JavaScript / Reactjs."),
+  subTitle: (0, _reactEasyEmoji["default"])("A passionate Freelancer,Front-End Software Developer 🚀 having an experience of designing and building Web  applications with JavaScript / Reactjs."),
   resumeLink: "https://drive.google.com/file/d/1P-QYPH4ASl3W0X0jUWFZNe2rBwuKgv6F/view?usp=sharing",
   displayGreeting: true // Set false to hide this section, defaults to true
 
