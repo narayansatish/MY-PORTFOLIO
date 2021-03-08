@@ -9,13 +9,13 @@ const illustration = {
 };
 
 const greeting = {
-  username: "David Rakosi",
-  title: "Hi all, I'm David",
+  username: "Satish Narayan",
+  title: "Hi all, I'm Satish",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of designing and building Web and Mobile applications with JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks."
+    "A passionate Front-End Software Developer 🚀 having an experience of designing and building Web  applications with JavaScript / Reactjs."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing",
+    "https://drive.google.com/file/d/1P-QYPH4ASl3W0X0jUWFZNe2rBwuKgv6F/view?usp=sharing",
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -23,14 +23,14 @@ const greeting = {
 
 const socialMediaLinks = {
   github: "https://github.com/drakosi99",
-  // linkedin: "https://www.linkedin.com/in/",
-  gmail: "contact@davidrakosi.com",
+  linkedin: "https://www.linkedin.com/in/satish-narayan-44bb36151/",
+  gmail: "yssatishnarayan@gmail.com",
   // gitlab: "https://gitlab.com/",
   // facebook: "https://www.facebook.com/",
-  medium: "https://medium.com/@davidrakosi",
-  stackoverflow: "https://stackoverflow.com/users/13263979/drakosi",
-  instagram: 'https://www.instagram.com/davidrakosi/',
-  twitter: 'https://twitter.com/davidrakosi_',
+  medium: "https://satish-narayan.medium.com/",
+  hackerrank: "https://www.hackerrank.com/narayansatish",
+
+  twitter: 'https://twitter.com/NarayanSatish10',
   display: true // Set true to display this section, defaults to false
 };
 
@@ -41,12 +41,9 @@ const skillsSection = {
   subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Develop highly interactive Front end / User Interfaces for your web  applications"
     )
+
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -61,10 +58,7 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "css3",
       fontAwesomeClassname: "fab fa-css3-alt"
     },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
+
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
@@ -73,26 +67,23 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "reactjs",
       fontAwesomeClassname: "fab fa-react"
     },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
+
+
+
     {
       skillName: "sql-database",
       fontAwesomeClassname: "fas fa-database"
+    }
+    ,
+    {
+      skillName: "Bootstrap",
+      fontAwesomeClassname: "fab fa-bootstrap"
     },
     {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
+      skillName: "Github",
+      fontAwesomeClassname: "fab fa-github"
     }
+
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -100,26 +91,16 @@ https://fontawesome.com/icons?d=gallery */
 // Education Section
 
 const educationInfo = {
-  display: false, // Set false to hide this section, defaults to true
+  display: true, // Set false to hide this section, defaults to true
   schools: [
+
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc:
-        "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "Indian Institute Of Engineering Science &Technology ,Shibpur",
+      logo: "https://i.ibb.co/QCw7qfW/iiest-logo.png",
+      subHeader: "Bachelor of Technology in Computer Science",
+      duration: "July 2017 - present",
+
+
     }
   ]
 };
@@ -127,19 +108,19 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "Frontend / Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      //progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
       Stack: "Backend",
-      progressPercentage: "70%"
+      // progressPercentage: "70%"
     },
     {
       Stack: "Programming",
-      progressPercentage: "90%"
+      //progressPercentage: "90%"
     }
   ],
   displayCodersrank: true // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -151,35 +132,40 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Clever Programmer",
+      role: "https://github.com/narayansatish/Github-Battle/tree/development",
+      company: "Github Battle",
       companylogo: require("./assets/images/cpLogo.png"),
-      date: "September 2020 – Present",
+      date: "https://githubbattlenarayansatish.netlify.app",
       desc:
-        "Changing lives of developers one line of code at a time.",
+        "Github Game using Github Api, as well as you can find TOP 30 repo of a domain.",
       descBullets: [
-        "Custom building applications",
-        "Coaching",
-        "Streaming live on YouTube",
-        "Creating tutorials"
+
       ]
     },
     {
-      role: "Product Owner (PSD2)",
-      company: "Erste Bank",
+      role: "https://github.com/narayansatish/e-commerce/tree/development",
+      company: "E-Commerce App",
       companylogo: require("./assets/images/ersteLogo.jpg"),
-      date: "July 2019 – September 2020",
+      date: "https://e-commerce-application-using-react.netlify.app",
       desc:
-        "I lead software developers building the API for the bank in order to fulfil the PSD2 regulation requirements."
+        "An E-commerce application using react-js,used local storage for storing data"
     },
     {
-      role: "Junior Information Security & Systems Representative",
-      company: "Vodafone",
+      role: "https://github.com/narayansatish/Mini-Project-Stopwatch-Assignment",
+      company: "Stopwatch App",
       companylogo: require("./assets/images/vodafoneLogo.png"),
-      date: "November 2018 – July 2019",
+      date: "https://stopwatchappnarayansatish.netlify.app",
       desc:
-        "I've conducted internal audit making sure the organization is compliant with the GDPR."
-    }
+        "A Stopwatch application using react-js"
+    },
+    {
+      role: "https://github.com/narayansatish/compound_interest_calculator",
+      company: "Compound Interest Calculator",
+      companylogo: require("./assets/images/vodafoneLogo.png"),
+      date: "https://compoundinterestcalculator.netlify.app",
+      desc:
+        "A simple compound interest calculator using Vanilla JavaScript. "
+    },
   ]
 };
 
@@ -188,7 +174,7 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
-  githubUserName: "drakosi99", // Change to your github username to view your profile in Contact Section.
+  githubUserName: "narayansatish", // Change to your github username to view your profile in Contact Section.
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
   display: false // Set false to hide this section, defaults to true
 };
@@ -277,7 +263,7 @@ const achievementSection = {
       subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
       image: require("./assets/images/pwaLogo.webp"),
       footerLink: [
-        {name: "Certification", url: ""},
+        { name: "Certification", url: "" },
         {
           name: "Final Project",
           url: ""
@@ -298,16 +284,16 @@ const blogSection = {
   blogs: [
     {
       url:
-        "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+        "https://satish-narayan.medium.com/how-the-keep-the-things-in-the-center-in-css-7535c4e90cf0",
+      title: "Centering In Css",
       description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+        "Do you also search every time while writing code how to keep things in the center? then it is for you!"
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
+      url: "https://satish-narayan.medium.com/my-first-reactjs-project-a37b5ce75e99",
+      title: "My first reactjs project experience",
       description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+        "I took my first baby steps in reactjs using this project."
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -349,14 +335,14 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "(323) 768 0674",
-  email_address: "contact@davidrakosi.com"
+  number: "+91 8910043481",
+  email_address: "yssatishnarayan@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
-  userName: "davidrakosi_", //Replace "twitter" with your twitter username without @
+  userName: "NarayanSatish10", //Replace "twitter" with your twitter username without @
   display: true // Set true to display this section, defaults to false
 };
 

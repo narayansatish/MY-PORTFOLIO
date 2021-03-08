@@ -1,8 +1,8 @@
-import React, {useState, createRef} from "react";
+import React, { useState, createRef } from "react";
 import "./ExperienceCard.css";
 import ColorThief from "colorthief";
 
-export default function ExperienceCard({cardInfo, isDark}) {
+export default function ExperienceCard({ cardInfo, isDark }) {
   const [colorArrays, setColorArrays] = useState([]);
   const imgRef = createRef();
 
@@ -17,35 +17,28 @@ export default function ExperienceCard({cardInfo, isDark}) {
       : "rgb(" + values.join(", ") + ")";
   }
 
-  const GetDescBullets = ({descBullets, isDark}) => {
+  const GetDescBullets = ({ descBullets, isDark }) => {
     return descBullets
       ? descBullets.map((item, i) => (
-          <li
-            key={i}
-            className={isDark ? "subTitle dark-mode-text" : "subTitle"}
-          >
-            {item}
-          </li>
-        ))
+        <li
+          key={i}
+          className={isDark ? "subTitle dark-mode-text" : "subTitle"}
+        >
+          {item}
+        </li>
+      ))
       : null;
   };
 
   return (
     <div className={isDark ? "experience-card-dark" : "experience-card"}>
-      <div style={{background: rgb(colorArrays)}} className="experience-banner">
+      <div style={{ background: rgb(colorArrays) }} className="experience-banner">
         <div className="experience-blurred_div"></div>
         <div className="experience-div-company">
           <h5 className="experience-text-company">{cardInfo.company}</h5>
         </div>
 
-        <img
-          crossOrigin={"anonymous"}
-          ref={imgRef}
-          className="experience-roundedimg"
-          src={cardInfo.companylogo}
-          alt={cardInfo.company}
-          onLoad={() => getColorArrays()}
-        />
+
       </div>
       <div className="experience-text-details">
         <h5
@@ -55,7 +48,7 @@ export default function ExperienceCard({cardInfo, isDark}) {
               : "experience-text-role"
           }
         >
-          {cardInfo.role}
+
         </h5>
         <h5
           className={
@@ -64,7 +57,7 @@ export default function ExperienceCard({cardInfo, isDark}) {
               : "experience-text-date"
           }
         >
-          {cardInfo.date}
+
         </h5>
         <p
           className={
@@ -78,7 +71,12 @@ export default function ExperienceCard({cardInfo, isDark}) {
         <ul>
           <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
         </ul>
+        <div style={{ display: "flex", justifyContent: "space-between", color: "white" }}>
+          <a href={cardInfo.date} target="_blank"> <button style={{ backgroundColor: "black", color: "white", padding: '5px', fontSize: "20px" }} >Live Link</button></a>
+          <a href={cardInfo.role} target="_blank"> <button style={{ backgroundColor: "black", color: "white", padding: '5px', fontSize: "20px" }}>Repo Link</button></a>
+        </div>
       </div>
     </div>
   );
 }
+//{cardInfo.role} -> github link  {cardInfo.date}-> live link
